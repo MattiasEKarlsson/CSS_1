@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (min-width: 768px) {.container {max-width: 720px;}}
+@media (min-width: 1200px) {.container {max-width: 1120px;}}
+
+
+
+.btn {
+    display: inline-flex;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1.25rem, 1.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+
+
+
+
+/*TopMenu*/
+#top-menu{
+  display: none;
+  border-bottom: 1px solid rgba(0,0,0,0.1);  
+}
+@media (min-width: 768px) {#top-menu {display: block;}}
+
+#top-menu .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+#top-menu .container .hours i{
+    color:#2baaec;
+    margin-right: 0.4;
+    font-size: 1.2em;
+
+}
+
+#top-menu .container .social-media{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    
+}
+
+#top-menu .container .social-media i{
+    margin-left: 1.4rem;
+}
+
+a{
+    color:#2baaec;
+    text-decoration: none;
+}
+
+a:hover{
+  color:#25e6c8 ;
+}
+
+
+
+
+
+/*MainMenu*/
+#main-menu{
+    font-family: 'Roboto Slab', serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+@media(min-width: 768px) { #main-menu { padding-top: 2rem; padding-bottom: 2rem;}}
+
+#main-menu .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-menu .container .logo{
+    height: 40;
+}
+@media(min-width: 768px) { #main-menu .container .logo { height: 65;}}
+
+#main-menu .container .menu{
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-menu .container .menu ul{
+    display: none;
+    list-style: none;
+    margin: 0;
+}
+@media(min-width: 768px) { #main-menu .container .menu ul { display: flex;}}
+
+#main-menu .container .menu ul li {
+    margin-left: 1.4rem;
+}
+
+#main-menu .container .menu ul li a {
+    color: #363636;
+}
+
+#main-menu .container .menu ul li a:hover {
+    color: #25e6c8;
+}
+
+#main-menu .container .menu button {
+    font-size: 2.0rem;
+    padding: 0;
+}
+@media (min-width: 768px) { #main-menu .container .menu button { display: none; } }
+
+
+
+
+
+/*Showcase*/
+#showcase {
+    font-family: 'Roboto Slab', serif;
+    background-color: #DEDEDE;
+}
+
+#showcase .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#showcase .container .personimg{
+    height: 170px;
+    align-items: center;
+}
+@media (min-width: 768px) {#showcase .container .personimg {height: 300px;}}
+@media (min-width: 1200px) {#showcase .container .personimg {height: 670px;}}
+
+#showcase .container .info h1 {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    color: #363636;
+ }
+@media (min-width: 768px) {#showcase .container .info h1 {font-size: 2rem; padding-top: 4rem; padding-left:5rem;}}
+@media (min-width: 1200px) {#showcase .container .info h1 {font-size: 3rem; padding-top: 7rem; padding-left: 6rem;}}
+
+#showcase .container .info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    color: #363636;
+}
+@media (min-width: 768px) {#showcase .container .info p {font-size: 1rem; margin-top:2rem; padding-left:5rem;}}
+@media (min-width: 1200px) {#showcase .container .info p {font-size: 1.5rem; margin-top:2.5rem; padding-left: 6rem;}}
+
+
+.btnabout{
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.50rem;
+    border: 1px solid transparent;
+    width: 150px;
+    height: 40px;
+    background-color:#25e6c8 ;
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.btnabout:hover{
+    background-color: #2baaec;
+}
+@media (min-width: 768px) {#showcase .container .btnabout {margin-left:4.8rem;}}
+@media (min-width: 1200px) {#showcase .container .btnabout {margin-left:6rem;}}
+
+
+
+
+
+/*About Us*/
+#aboutus .grid{
+    display: grid;
+    grid-auto-columns: auto;
+    padding: 2rem;
+}
+@media (min-width: 1200px) {#aboutus .grid {grid-template-columns:1fr 1fr; margin: 2rem;}}
+
+#aboutus{
+    text-align: center;
+}
+
+#aboutus span{
+    color: #2baaec;
+}
+
+#aboutus .grid .item1{
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 1200px) {#aboutus .grid .item1 {grid-column:2;grid-row-start: 1; grid-row-end:4;}}
+
+#aboutus .grid .item1 img{
+    height:170px ;
+}
+@media (min-width: 768px) {#aboutus .grid .item1 img {height:400px;}}
+@media (min-width: 1200px) {#aboutus .grid .item1 img {height:720px;}}
+
+#aboutus .item2 h1{
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+    min-height: 40px;
+    border-bottom: 3px solid #25e6c8 ;
+    border-spacing:2rem;
+}
+@media (min-width: 768px) {#aboutus .item2 h1 {font-size: 2rem; min-height: 60px;}}
+@media (min-width: 1200px) {#aboutus .item2 h1 {font-size: 2.7rem;}}
+
+#aboutus p{
+    font-size:  0.7rem; 
+    font-family: 'Roboto', sans-serif; 
+}
+@media (min-width: 768px) {#aboutus p {font-size: 1rem;}}
+@media (min-width: 1200px) {#aboutus p {font-size: 1.5rem;}}
+
+
+#aboutus .grid .item4 img{
+    height:2rem;
+    margin: 1rem;
+}
+@media (min-width: 768px) {#aboutus .grid .item4 img {height: 5rem; margin: 2rem;}}
+
+
+
+
+
+
+/*Services*/
+
+#services{
+    font-family: 'Roboto Slab', serif;
+    background-color: #F7F7F7;
+    padding: 1rem;
+}
+@media (min-width: 1200px) {#services {padding:4rem;}}
+#services .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 2rem;
+}
+@media (min-width: 768px) {#services .grid {grid-template-columns:1fr 1fr 1fr;}}
+
+.btn1{
+    height: 100px;
+    width: 100px;
+    background-color: #25e6c8;
+    border-radius: 50px;
+    border: none;
+    transition: background-color 0.5s;
+}
+.btn1:hover{
+background-color: #2BAAEC;
+}
+
+#services .grid .item1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom:3px solid #25e6c8 ;
+}
+@media (min-width: 768px) {#services .grid .item1 {grid-row:1;grid-column-start: 1; grid-column-end:4;}}
+
+ #services .grid .item1 h2{
+     font-size: 1.3rem;
+ }
+ @media (min-width: 768px) {#services .grid .item1 h2{font-size: 1.7rem;}}
+ @media (min-width: 1200px) {#services .grid .item1 h2{font-size: 2.2rem;}}
+
+#services .grid .item{
+    background-color: #FFFFFF;
+    padding: 2rem;
+    text-align: center;
+    border-radius:5px;
+    margin: 1rem;
+}
+
+#services .grid .item h1{
+    font-size:0.9rem;
+}
+
+#services .item p{
+    font-family: 'Roboto', sans-serif;
+    font-size:0.7rem;
+}
+
+#services .item img{
+    margin: auto;
+    height:50px;
+}
+
+#services h2{
+    font-size: 1.4rem;
+}
+
+
+
+/*Appointments*/
+#appointments{
+    font-family: 'Roboto Slab', serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #2BAAEC;
+    color: white;
+    opacity: 0.8;
+   
+}
+@media (min-width: 768px) {#appointments{height: 80px;}}
+@media (min-width: 1200px) {#appointments{height: 120px;}}
+
+#appointments .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) {#appointments .container {flex-direction: row; justify-content: space-between;}}
+
+.btnbook{
+    
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.50rem;
+    border: 1px solid transparent;
+    width: 150px;
+    height: 40px;
+    background-color:FFFFF ;
+    font-size: 0.9rem;
+    color: #2BAAEC;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+@media (min-width: 768px) {#appointments .container .btnbook {width: 200px; height:50px;}}
+@media (min-width: 1200px) {#appointments .container .btnbook {width: 200px; height:50px; margin-top: 1.7rem;}}
+@media (min-width: 1200px) {#appointments p { margin-top: 2rem;}}
+
+
+
+
+
+/*Footer*/
+
+#footer{
+    background-color:#2BAAEC ;
+    color: #F3FBFF;
+    border-top: 1px solid rgba(0,0,0,0.1); 
+    text-align: center;
+    height: 30px;
+    
+}
+
+#footer p{
+    opacity: 0.6;
+    font-size: 0.6rem;
+}
+
+
+
